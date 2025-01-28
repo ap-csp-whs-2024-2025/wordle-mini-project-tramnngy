@@ -13,11 +13,18 @@
 
 std::vector<int> createSecret() {
     // Write this procedure here
-    return {};    // replace this with your code
+  std::vector <int> code = {};
+   for (int i = 0; i < 4; ++i) 
+   {
+    int a =  rand() % 9;
+   code.push_back(a);
+   }
+    return {code};    // replace this with your code
 }
 
 std::vector<std::string> getHint(std::vector<int> secret, std::vector<int> guess) {
     // Write this procedure here
+    
     return {"X", "X", "X", "X"};    // replace this with your code
 }
 
